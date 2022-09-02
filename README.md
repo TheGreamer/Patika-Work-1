@@ -1,4 +1,6 @@
 <i>Patika .NET Core - 1st Work (Patika & PayCore)</i>
+<br />
+<h3>(Sonraki güncellemede birim testleri eklenecek.)</h3>
 
 <hr />
 <h2>Proje Hakkında</h2>

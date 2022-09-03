@@ -9,7 +9,7 @@ namespace PatikaClassWork1.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BooksController : CoreController<Book, CreateBook, UpdateBook, IBookService>
+    public class BooksController : CoreController<Book, BookDto, IBookService>
     {
         public BooksController(IBookService service, IMapper mapper) : base(service, mapper)
         {

@@ -10,7 +10,7 @@ namespace PatikaClassWork1.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AuthorsController : CoreController<Author, CreateAuthor, UpdateAuthor, IAuthorService>
+    public class AuthorsController : CoreController<Author, AuthorDto, IAuthorService>
     {
         private readonly IAuthorService _authorService;
 

@@ -3,12 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatikaClassWork1", "PatikaClassWork1\PatikaClassWork1.csproj", "{1CA2D7F0-B7F0-490D-88C4-499661B88512}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatikaClassWork1", "PatikaClassWork1\PatikaClassWork1.csproj", "{1CA2D7F0-B7F0-490D-88C4-499661B88512}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A90A649F-A117-4663-8150-151FD9973F41}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatikaClassWork1.Tests", "PatikaClassWork1.Tests\PatikaClassWork1.Tests.csproj", "{B0A19927-618A-4892-AFF7-C6480AD5BD1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +22,10 @@ Global
 		{1CA2D7F0-B7F0-490D-88C4-499661B88512}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CA2D7F0-B7F0-490D-88C4-499661B88512}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CA2D7F0-B7F0-490D-88C4-499661B88512}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0A19927-618A-4892-AFF7-C6480AD5BD1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0A19927-618A-4892-AFF7-C6480AD5BD1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0A19927-618A-4892-AFF7-C6480AD5BD1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0A19927-618A-4892-AFF7-C6480AD5BD1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -20,10 +20,8 @@ builder.Services.AddDbContext<EfContext>(options => options.UseSqlServer(builder
 
 builder.Services.AddControllers()
                 .AddJsonOptions(j => j.JsonSerializerOptions.Converters.Add(new DateTimeConverter()))
-                .AddFluentValidation(f => f.RegisterValidatorsFromAssemblyContaining<CreateAuthorValidator>())
-                .AddFluentValidation(f => f.RegisterValidatorsFromAssemblyContaining<CreateBookValidator>())
-                .AddFluentValidation(f => f.RegisterValidatorsFromAssemblyContaining<UpdateAuthorValidator>())
-                .AddFluentValidation(f => f.RegisterValidatorsFromAssemblyContaining<UpdateBookValidator>());
+                .AddFluentValidation(f => f.RegisterValidatorsFromAssemblyContaining<AuthorValidator>())
+                .AddFluentValidation(f => f.RegisterValidatorsFromAssemblyContaining<BookValidator>());
 
 builder.Services.AddEndpointsApiExplorer()
                 .AddSwaggerGen();

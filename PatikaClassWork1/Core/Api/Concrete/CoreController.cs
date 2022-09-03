@@ -8,10 +8,9 @@ using PatikaClassWork1.Utilities;
 
 namespace PatikaClassWork1.Core.Api.Concrete
 {
-    public class CoreController<TEntity, TCreateDto, TUpdateDto, TService> : ControllerBase, ICoreController<TEntity, TCreateDto, TUpdateDto>
+    public class CoreController<TEntity, TDto, TService> : ControllerBase, ICoreController<TEntity, TDto>
         where TEntity : CoreEntity
-        where TCreateDto : ICoreCreateDto
-        where TUpdateDto : ICoreUpdateDto
+        where TDto : ICoreDto
         where TService : IService<TEntity>
     {
         private readonly TService _service;
@@ -44,25 +43,28 @@ namespace PatikaClassWork1.Core.Api.Concrete
         }
 
         [HttpPost]
-        public virtual async Task<ActionResult> Add([FromBody] TCreateDto createDto)
+        public virtual async Task<ActionResult> Add([FromBody] TDto dto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            await _service.Add(_mapper.Map<TEntity>(createDto));
+            await _service.Add(_mapper.Map<TEntity>(dto));
             return Ok(Message.ADDED);
         }
 
         [HttpPut]
-        public virtual async Task<ActionResult> Update([FromBody] TUpdateDto updateDto)
+        public virtual async Task<ActionResult> Update(int? id, [FromBody] TDto dto)
         {
+            if (id == null)
+                return BadRequest(Message.ID_NULL);
+
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            if (_service.GetById(updateDto.Id) == null)
+            if (_service.GetById((int)id) == null)
                 return NotFound(Message.NOT_FOUND);
 
-            await _service.Update(_mapper.Map<TEntity>(updateDto));
+            await _service.Update(_mapper.Map<TEntity>(dto));
             return Ok(Message.UPDATED);
         }
 

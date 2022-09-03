@@ -48,7 +48,8 @@ namespace PatikaClassWork1.Core.Api.Concrete
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            await _service.Add(_mapper.Map<TEntity>(dto));
+            var entity = _mapper.Map<TEntity>(dto);
+            await _service.Add(entity);
             return Ok(Message.ADDED);
         }
 
@@ -64,7 +65,10 @@ namespace PatikaClassWork1.Core.Api.Concrete
             if (_service.GetById((int)id) == null)
                 return NotFound(Message.NOT_FOUND);
 
-            await _service.Update(_mapper.Map<TEntity>(dto));
+            var entity = _mapper.Map<TEntity>(dto);
+            entity.Id = (int)id;
+            await _service.Update(entity);
+
             return Ok(Message.UPDATED);
         }
 

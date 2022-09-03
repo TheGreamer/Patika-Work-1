@@ -10,9 +10,15 @@ namespace PatikaClassWork1.Tests
         private readonly Mock<IBookService> _bookService = new();
 
         [Fact]
-        public void GetBook()
+        public void There_must_be_a_book_with_id_3()
         {
-            _bookService.Object.GetById(3).Should().NotBeNull();
+            _bookService.Object.GetById(4).Should().NotBeNull();
+        }
+
+        [Fact]
+        public void At_least_2_books_exist()
+        {
+            _bookService.Object.GetAll().Result.Count.Should().BeGreaterThan(1);
         }
     }
 }

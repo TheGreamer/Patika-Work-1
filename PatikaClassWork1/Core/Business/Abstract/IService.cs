@@ -1,8 +1,9 @@
-﻿using System.Linq.Expressions;
+﻿using PatikaClassWork1.Core.Entity.Concrete;
+using System.Linq.Expressions;
 
 namespace PatikaClassWork1.Core.Business.Abstract
 {
-    public interface IService<TEntity>
+    public interface IService<TEntity> where TEntity : CoreEntity
     {
         Task<List<TEntity>> GetAll(Expression<Func<TEntity, bool>>? filter = null);
         Task<TEntity> Get(Expression<Func<TEntity, bool>> filter);

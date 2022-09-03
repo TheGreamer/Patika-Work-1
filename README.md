@@ -66,8 +66,7 @@
                 <ul>
                     <li>Abstract
                         <ul>
-                            <li><a href="https://github.com/TheGreamer/Patika-Work-1/blob/master/PatikaClassWork1/Core/Dto/Abstract/ICoreCreateDto.cs" target="_blank"><b>ICoreCreateDto.cs</b></a></li>
-                            <li><a href="https://github.com/TheGreamer/Patika-Work-1/blob/master/PatikaClassWork1/Core/Dto/Abstract/ICoreUpdateDto.cs" target="_blank"><b>ICoreUpdateDto.cs</b></a></li>
+                            <li><a href="https://github.com/TheGreamer/Patika-Work-1/blob/master/PatikaClassWork1/Core/Dto/Abstract/ICoreDto.cs" target="_blank"><b>ICoreDto.cs</b></a></li>
                         </ul>
                     </li>
                     <li>Concrete
@@ -154,10 +153,8 @@
         <ul>
             <li>Concrete
                 <ul>
-                    <li><a href="https://github.com/TheGreamer/Patika-Work-1/blob/master/PatikaClassWork1/Dto/Concrete/CreateAuthor.cs" target="_blank"><b>CreateAuthor.cs</b></a></li>
-                    <li><a href="https://github.com/TheGreamer/Patika-Work-1/blob/master/PatikaClassWork1/Dto/Concrete/CreateBook.cs" target="_blank"><b>CreateBook.cs</b></a></li>
-                    <li><a href="https://github.com/TheGreamer/Patika-Work-1/blob/master/PatikaClassWork1/Dto/Concrete/UpdateAuthor.cs" target="_blank"><b>UpdateAuthor.cs</b></a></li>
-                    <li><a href="https://github.com/TheGreamer/Patika-Work-1/blob/master/PatikaClassWork1/Dto/Concrete/UpdateBook.cs" target="_blank"><b>UpdateBook.cs</b></a></li>
+                    <li><a href="https://github.com/TheGreamer/Patika-Work-1/blob/master/PatikaClassWork1/Dto/Concrete/AuthorDto.cs" target="_blank"><b>AuthorDto.cs</b></a></li>
+                    <li><a href="https://github.com/TheGreamer/Patika-Work-1/blob/master/PatikaClassWork1/Dto/Concrete/BookDto.cs" target="_blank"><b>BookDto.cs</b></a></li>
                 </ul>
             </li>
         </ul>
@@ -178,10 +175,8 @@
             </li>
             <li>Validators
                 <ul>
-                    <li><a href="https://github.com/TheGreamer/Patika-Work-1/blob/master/PatikaClassWork1/Validators/CreateAuthorValidator.cs" target="_blank"><b>CreateAuthorValidator.cs</b></a></li>
-                    <li><a href="https://github.com/TheGreamer/Patika-Work-1/blob/master/PatikaClassWork1/Validators/CreateBookValidator.cs" target="_blank"><b>CreateBookValidator.cs</b></a></li>
-                    <li><a href="https://github.com/TheGreamer/Patika-Work-1/blob/master/PatikaClassWork1/Validators/UpdateAuthorValidator.cs" target="_blank"><b>UpdateAuthorValidator.cs</b></a></li>
-                    <li><a href="https://github.com/TheGreamer/Patika-Work-1/blob/master/PatikaClassWork1/Validators/UpdateBookValidator.cs" target="_blank"><b>UpdateBookValidator.cs</b></a></li>
+                    <li><a href="https://github.com/TheGreamer/Patika-Work-1/blob/master/PatikaClassWork1/Validators/AuthorValidator.cs" target="_blank"><b>AuthorValidator.cs</b></a></li>
+                    <li><a href="https://github.com/TheGreamer/Patika-Work-1/blob/master/PatikaClassWork1/Validators/BookValidator.cs" target="_blank"><b>BookValidator.cs</b></a></li>
                 </ul>
             </li>
             <li><a href="https://github.com/TheGreamer/Patika-Work-1/blob/master/PatikaClassWork1/Program.cs" target="_blank"><b>Program.cs</b></a></li>

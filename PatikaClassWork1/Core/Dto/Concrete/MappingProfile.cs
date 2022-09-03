@@ -8,11 +8,8 @@ namespace PatikaClassWork1.Core.Dto.Concrete
     {
         public MappingProfile()
         {
-            CreateMap<Author, AuthorDto>();
-            CreateMap<AuthorDto, Author>();
-
-            CreateMap<Book, BookDto>();
-            CreateMap<BookDto, Book>();
+            CreateMap<AuthorDto, Author>().ReverseMap();
+            CreateMap<BookDto, Book>().ReverseMap();
         }
     }
 }

@@ -2,19 +2,19 @@
 <br />
 
 <hr />
-<h2>Proje Hakkında</h2>
+<h2>🧐 About The Project</h2>
 <ul>
-    <li>.NET 6 ile geliştirilmiş bir ASP.NET Web API projesidir.</li>
-    <li>Patika'da yer alan <a href="https://app.patika.dev/courses/net-core/16-odev-author-controller-eklenmesi">örnek çalışmaya</a> ait bir projedir.</li>
-    <li>Katmanlı bir yapı izlenerek oluşturulmuştur.</li>
-    <li><a href="https://www.microsoft.com/sql-server/sql-server-2019" target="_blank">MsSQL</a> veri tabanı kullanılmıştır.</li>
-    <li><a href="https://www.entityframeworktutorial.net/efcore/entity-framework-core.aspx" target="_blank">Entity Framework Core</a> ORM aracından yararlanılmıştır.</li>
-    <li>Gerekli validasyon işlemleri <a href="https://fluentvalidation.net">FluentValidation</a> kütüphanesi kullanılarak gerçekleştirilmiştir.</li>
-    <li>Veri transferiyle güvenliğin sağlanması <a href="https://docs.automapper.org/en/stable/">AutoMapper</a> kütüphanesi aracılığıyla yapılmıştır.</li>
+    <li>An ASP.NET Web API project developed with .NET 6.</li>
+    <li>It is a <a href="https://app.patika.dev/courses/net-core/16-odev-author-controller-eklenmesi">task project</a> in Patika.</li>
+    <li>Was created by following the N-Tier architecture.</li>
+    <li><a href="https://www.microsoft.com/sql-server/sql-server-2019" target="_blank">MsSQL</a> database was used.</li>
+    <li><a href="https://www.entityframeworktutorial.net/efcore/entity-framework-core.aspx" target="_blank">Entity Framework Core</a> ORM tool was used.</li>
+    <li>Necessary validation processes were performed using the <a href="https://fluentvalidation.net">FluentValidation</a> library.</li>
+    <li>Ensuring security with data transfer is done through the <a href="https://docs.automapper.org/en/stable/">AutoMapper</a> library.</li>
 </ul>
 
 <hr />
-<h2>Proje Yapısı</h2>
+<h2>💻 Project Structure</h2>
 <ul>
     <li>Core
         <ul>
